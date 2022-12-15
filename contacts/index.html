@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/contacts.css" />
+  </head>
+
+  <body>
+    <!-- Header con Navbar-->
+    <header class="header">
+      <div class="header__content">
+        <a class="header__logo" href="/home/index.html">
+          <strong>HOME</strong>
+        </a>
+        <ul class="header__menu">
+          <li><a href="#">Cosa 1</a></li>
+          <li><a href="#">Cosa 2</a></li>
+          <li><a href="#">Cosa 3</a></li>
+          <li><a href="#">Cosa 4</a></li>
+          <li><a href="#">Cosa 5</a></li>
+        </ul>
+        <div class="header__quick">
+          <a href="#">Contacts</a>
+          <div class="icon-hamburger">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-form">
+      <h1 class="text-4">Puoi contattarmi qui:</h1>
+
+      <form class="cf">
+        <div class="half left cf">
+          <input type="text" id="input-name" placeholder="Name" />
+          <input type="email" id="input-email" placeholder="Email address" />
+          <input type="text" id="input-subject" placeholder="Subject" />
+        </div>
+        <div class="half right cf">
+          <textarea
+            name="message"
+            type="text"
+            id="input-message"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <input type="submit" value="Invia" class="input-submit" />
+      </form>
+    </div>
+
+    <script>
+      let item = document.querySelector(".icon-hamburger");
+      item.addEventListener("click", function () {
+        document.body.classList.toggle("menu-open");
+      });
+    </script>
+  </body>
+</html>

@@ -30,6 +30,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
     <style>
       /* Reset */
       body,
@@ -90,9 +91,11 @@
     </style>
   </head>
   <body>
+    <!-- Header con Navbar-->
+
     <header class="header">
       <div class="header__content">
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="/home/index.html">
           <strong>HOME</strong>
         </a>
         <ul class="header__menu">
@@ -112,17 +115,112 @@
       </div>
     </header>
 
-    <div class="cover cover-big">
+    <!--Grid di presentazione con foto-->
+    <div class="grid hero">
+      <div class="col-50 hero-presentation sma-text-center pt-3 pb-4">
+        <h1 class="name-title"><strong>Andrea Demarchi</strong></h1>
+        <h2>Sviluppatore Web</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quam
+          animi neque explicabo modi vel fugit.
+        </p>
+        <a href="/contacts/" class="button button-hero">CONTATTAMI</a>
+      </div>
+      <div class="col-50 relative">
+        <svg
+          class="blob"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#777E64"
+            d="M30,-35.3C45.1,-30.4,67.6,-29.9,72.9,-21.8C78.2,-13.7,66.2,2,58.1,16.5C50.1,31,46,44.3,37,53.7C27.9,63.1,14,68.5,-0.9,69.7C-15.8,70.9,-31.5,68,-37.7,57.7C-43.8,47.4,-40.4,29.7,-47.3,14C-54.2,-1.6,-71.4,-15.2,-73.9,-29.1C-76.5,-43.1,-64.2,-57.3,-49.5,-62.3C-34.7,-67.3,-17.3,-62.9,-4.9,-56.1C7.5,-49.4,15,-40.1,30,-35.3Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+        <img
+          src="/assets/img/man-working-laptop.jpg"
+          alt="Andrea Demarchi"
+          class="img-res img-round p-4"
+        />
+      </div>
+    </div>
+
+    <!-- Cover con button-->
+    <div class="cover cover-big mt-3">
       <div class="cover__content">
-        <h1>Andrea Demarchi</h1>
-        <h2>Web Designer</h2>
+        <h1>Lorem Ipsum</h1>
+        <h2>Web Design</h2>
         <a href="#" class="button">Contattami</a>
       </div>
     </div>
 
     <div class="spacer"></div>
 
+    <!-- Lavori:Grid con 3 colonne + 1 in alto-->
     <div class="grid">
+      <div class="col-100 text-center">
+        <h2>Lavori precedenti</h2>
+        <p>Ecco i lavori da portare come esempio</p>
+      </div>
+      <div class="col-33 pt-3">
+        <div
+          class="cover round-corners"
+          style="
+            background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.6)
+              ),
+              url('https://source.unsplash.com/random');
+          "
+        >
+          <div class="cover__content">
+            <h1>Lavoro 1</h1>
+            <h2>Breve descrizione</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-33 pt-3">
+        <div
+          class="cover round-corners"
+          style="
+            background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.6)
+              ),
+              url('https://source.unsplash.com/random');
+          "
+        >
+          <div class="cover__content">
+            <h1>Lavoro 2</h1>
+            <h2>Breve descrizione</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-33 pt-3 pb-4">
+        <div
+          class="cover round-corners"
+          style="
+            background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.6)
+              ),
+              url('https://source.unsplash.com/random');
+          "
+        >
+          <div class="cover__content">
+            <h1>Lavoro 3</h1>
+            <h2>Breve descrizione</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Vecchia grid di presentazione, forse togliere?-->
+    <!-- <div class="grid">
       <div class="col-50">
         <h1>Hello world</h1>
         <h2>lorem impsum</h2>
@@ -144,11 +242,11 @@
     </div>
     <div class="center-button">
       <a href="" class="button">Button</a>
-    </div>
+    </div> -->
 
     <div class="grid pt-4">
       <div class="col-50">
-        <h3>Lorem Ipsum</h3>
+        <h1 class="text-center">Lorem Ipsum</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
           ipsum nostrum. Ipsa ea unde ab voluptate perspiciatis, dolorum,
@@ -170,7 +268,7 @@
       </div>
       <div class="col-50">
         <div
-          class="cover"
+          class="cover round-corners"
           style="
             background-image: linear-gradient(
                 to bottom,
@@ -191,7 +289,7 @@
     <div class="grid pt-4">
       <div class="col-50">
         <div
-          class="cover"
+          class="cover round-corners"
           style="
             background-image: linear-gradient(
                 to bottom,
@@ -221,7 +319,7 @@
     </div>
 
     <!-- Footer Navbar -->
-    <div class="nav-container">
+    <div class="nav-container relative mt-4">
       <nav class="nav horizontal">
         <ul>
           <li>
@@ -247,6 +345,7 @@
         </ul>
       </nav>
     </div>
+
     <div class="spacer-2"></div>
 
     <script>
