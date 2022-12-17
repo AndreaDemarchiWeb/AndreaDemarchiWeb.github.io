@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Andrea Demarchi Web</title>
 
     <!-- Google icons  -->
     <link
@@ -29,6 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!--Stylesheets-->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/home.css" />
     <style>
@@ -96,17 +97,20 @@
     <header class="header">
       <div class="header__content">
         <a class="header__logo" href="/home/index.html">
-          <strong>HOME</strong>
+          <img
+            src="/assets/img/logo-only-letters-w.png"
+            alt="Andrea Demarchi Logo"
+            class="img-res logo"
+          />
         </a>
-        <ul class="header__menu">
-          <li><a href="#">Cosa 1</a></li>
-          <li><a href="#">Cosa 2</a></li>
-          <li><a href="#">Cosa 3</a></li>
-          <li><a href="#">Cosa 4</a></li>
-          <li><a href="#">Cosa 5</a></li>
+        <ul class="header__menu menu-closed">
+          <li><a href="/home/index.html">Home</a></li>
+          <li><a href="/home/index.html#about-me">About</a></li>
+          <li><a href="/home/index.html#elenco-lavori">Projects</a></li>
+          <li><a href="/contacts/index.html">Contacts</a></li>
         </ul>
         <div class="header__quick">
-          <a href="#">Contacts</a>
+          <a href="#"></a>
           <div class="icon-hamburger">
             <span></span>
             <span></span>
@@ -120,10 +124,7 @@
       <div class="col-50 hero-presentation sma-text-center pt-3 pb-4">
         <h1 class="name-title"><strong>Andrea Demarchi</strong></h1>
         <h2>Sviluppatore Web</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quam
-          animi neque explicabo modi vel fugit.
-        </p>
+        <p></p>
         <a href="/contacts/" class="button button-hero">CONTATTAMI</a>
       </div>
       <div class="col-50 relative">
@@ -155,13 +156,14 @@
       </div>
     </div>
 
+    <a id="elenco-lavori"></a>
     <div class="spacer"></div>
 
     <!-- Lavori:Grid con 3 colonne + 1 in alto-->
     <div class="grid">
       <div class="col-100 text-center">
         <h2>Lavori precedenti</h2>
-        <p>Ecco i lavori da portare come esempio</p>
+        <p>Ecco alcuni esempi dei miei lavori precedenti</p>
       </div>
       <div class="col-33 pt-3">
         <div
@@ -219,51 +221,34 @@
       </div>
     </div>
 
-    <!--Vecchia grid di presentazione, forse togliere?-->
-    <!-- <div class="grid">
-      <div class="col-50">
-        <h1>Hello world</h1>
-        <h2>lorem impsum</h2>
-        <h3>dolor sit amet</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ullam
-          incidunt harum omnis facere, rerum sapiente aspernatur praesentium,
-          repellendus iste, dicta eveniet architecto eum officiis unde ratione?
-          Mollitia, unde ullam?
-        </p>
-      </div>
-
-      <div class="col-50 mb-2">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
-        inventore minus quas velit, libero soluta ad voluptates quisquam, nemo
-        ipsum possimus accusamus aliquam nobis vitae! Enim ipsa eos similique
-        corporis.
-      </div>
-    </div>
-    <div class="center-button">
-      <a href="" class="button">Button</a>
-    </div> -->
+    <div id="about-me"></div>
 
     <div class="grid pt-4">
       <div class="col-50">
-        <h1 class="text-center">Lorem Ipsum</h1>
+        <h1 class="text-center">About Me</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-          ipsum nostrum. Ipsa ea unde ab voluptate perspiciatis, dolorum,
-          officiis perferendis corporis nemo tempora incidunt aliquam aspernatur
-          iusto aut similique natus!
+          Ho una solida base di conoscenze nei linguaggi di programmazione HTML,
+          CSS e JavaScript. Ho utilizzato queste tecnologie in numerosi progetti
+          di sviluppo web, sia per creare siti statici che per sviluppare
+          applicazioni web dinamiche. Inoltre, ho acquisito esperienza
+          nell'utilizzo di librerie come Bootstrap e jQuery per accelerare lo
+          sviluppo e rendere i miei progetti più robusti.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-          ipsum nostrum. Ipsa ea unde ab voluptate perspiciatis, dolorum,
-          officiis perferendis corporis nemo tempora incidunt aliquam aspernatur
-          iusto aut similique natus!
+          Sono una persona molto curiosa e mi piace sempre imparare cose nuove,
+          quindi ho anche seguito diversi tutorial e corsi online per ampliare
+          le mie conoscenze tecniche. Ad esempio, ho recentemente seguito un
+          corso di sviluppo di applicazioni web con React e ho utilizzato questa
+          tecnologia in un progetto personale di un'app di gestione delle
+          finanze.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-          ipsum nostrum. Ipsa ea unde ab voluptate perspiciatis, dolorum,
-          officiis perferendis corporis nemo tempora incidunt aliquam aspernatur
-          iusto aut similique natus!
+          I miei obiettivi professionali a lungo termine sono quelli di
+          diventare uno sviluppatore full-stack e di continuare a imparare nuove
+          tecnologie per rimanere al passo con gli sviluppi del settore. Sono
+          convinto che le mie solide conoscenze tecniche e la mia capacità di
+          imparare rapidamente mi metteranno in buona posizione per raggiungere
+          questi obiettivi.
         </p>
       </div>
       <div class="col-50">
@@ -307,7 +292,7 @@
       </div>
       <div class="col-50">
         <div class="p-4">
-          <h2 class="text-1">Lorem Ipsum</h2>
+          <h2 class="text-2">Technologies</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
             ipsum nostrum. Ipsa ea unde ab voluptate perspiciatis, dolorum,
