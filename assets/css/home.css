@@ -105,6 +105,12 @@ nav.horizontal:hover::after {
   transform: scaleX(1.1);
 }
 
+.uil {
+  font-size: 140%;
+  position: relative;
+  bottom: 5px;
+}
+
 /*Rimpicciolisce leggermente il blob per mobile, altrimenti usciva dallo schermo di poco*/
 @media (max-width: 768px) {
   .blob {
