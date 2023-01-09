@@ -51,6 +51,19 @@
     ),
     url(../img/cover.jpg);
 }
+.cover__content__top {
+  text-align: left;
+  padding-left: 5%;
+}
+.technologies-section-1 {
+  display: flex;
+}
+.technologies-section-2 {
+  align-self: center;
+}
+.technologies-section-2 h2 {
+  text-align: center;
+}
 
 /* Footer Navbar */
 
@@ -119,6 +132,12 @@ nav.horizontal:hover::after {
     top: -20%;
     left: -15%;
     z-index: 0;
+  }
+}
+/*Media query per far sì che la foto non finisca sotto la navbar */
+@media (min-width: 768px) {
+  .photo-blob {
+    margin-top: 7%;
   }
 }
 

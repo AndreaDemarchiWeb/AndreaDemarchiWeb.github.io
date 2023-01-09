@@ -276,6 +276,10 @@ h3,
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
+.text-3-5 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
 h4,
 p,
 .text-4 {
@@ -395,6 +399,10 @@ a {
 .text-left {
   text-align: left;
 }
+.relative {
+  position: relative;
+}
+
 .img-res {
   width: 100%;
   height: auto;
@@ -404,11 +412,11 @@ a {
 .img-round {
   border-radius: 100%;
 }
-.relative {
-  position: relative;
-}
 .round-corners {
   border-radius: 40px;
+}
+.round-corners-2 {
+  border-radius: 500px;
 }
 
 @media (max-width: 768px) {
