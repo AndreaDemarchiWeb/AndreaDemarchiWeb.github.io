@@ -428,3 +428,7 @@ a {
 .border1 {
   border: 3px solid red;
 }
+
+.fit-page {
+  height: calc(100vh - 80px);
+}
