@@ -8,6 +8,7 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  line-height: 1;
 }
 *,
 *:before,
@@ -29,6 +30,8 @@ ul {
 ol,
 ul {
   list-style-type: none;
+  padding-left: 20px;
+  line-height: 1.5;
 }
 img {
   height: auto;

@@ -124,6 +124,26 @@ nav.horizontal:hover::after {
   position: relative;
   bottom: 5px;
 }
+/* Classi immagini */
+.image-technologies {
+  background-image: url("/assets/img/technologies-picture.png"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.image-about {
+  background-image: url("/assets/img/man-laptop-digital-2.png"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.image-work-temp {
+  background-image: url("https://source.unsplash.com/random"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.image-first-work {
+  background-image: url("https://source.unsplash.com/random"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+}
 
 /*Rimpicciolisce leggermente il blob per mobile, altrimenti usciva dallo schermo di poco*/
 @media (max-width: 768px) {
