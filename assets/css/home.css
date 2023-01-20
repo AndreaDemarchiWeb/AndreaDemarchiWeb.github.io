@@ -4,10 +4,12 @@
   display: flex;
   align-items: center;
 }
+
 .hero img {
   position: relative;
   z-index: 1;
 }
+
 .blob {
   position: absolute;
   width: 140%;
@@ -15,6 +17,7 @@
   left: -22%;
   z-index: 0;
 }
+
 .hero-presentation {
   margin-top: 10vh;
 }
@@ -33,6 +36,7 @@
   background-position: center center;
   background-size: cover;
 }
+
 .cover * {
   color: #fff;
 }
@@ -42,26 +46,29 @@
   justify-content: center;
   align-items: center;
 }
+
 .cover-big {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.2) 15%,
       rgba(0, 0, 0, 0.4) 30%,
       rgba(0, 0, 0, 0.5) 60%,
-      rgba(0, 0, 0, 0.7) 95%
-    ),
+      rgba(0, 0, 0, 0.7) 95%),
     url(../img/cover.jpg);
 }
+
 .cover__content__top {
   text-align: left;
   padding-left: 5%;
 }
+
 .technologies-section-1 {
   display: flex;
 }
+
 .technologies-section-2 {
   align-self: center;
 }
+
 .technologies-section-2 h2 {
   text-align: center;
 }
@@ -74,6 +81,7 @@
   justify-content: center;
   align-items: center;
 }
+
 nav {
   background: #b6c199;
   height: 57px;
@@ -124,25 +132,64 @@ nav.horizontal:hover::after {
   position: relative;
   bottom: 5px;
 }
+
 /* Classi immagini */
 .image-technologies {
-  background-image: url("/assets/img/technologies-picture.png"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("/assets/img/technologies-picture.png");
 }
 
 .image-about {
-  background-image: url("/assets/img/man-laptop-digital-2.png"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url("/assets/img/man-laptop-digital-2.png");
 }
 
 .image-work-temp {
-  background-image: url("https://source.unsplash.com/random"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/random");
 }
 
+/* Interazioni con le cards dei lavori precedenti */
 .image-first-work {
-  background-image: url("https://source.unsplash.com/random"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  position: relative;
+}
+
+.cover__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.image-first-work::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("/assets/img/work-portfolio.png");
+  filter: blur(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 40px;
+
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  min-height: 600px;
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.image-first-work:hover::before {
+  filter: blur(2px) brightness(70%);
 }
 
 /*Rimpicciolisce leggermente il blob per mobile, altrimenti usciva dallo schermo di poco*/
@@ -155,6 +202,7 @@ nav.horizontal:hover::after {
     z-index: 0;
   }
 }
+
 /*Media query per far sì che la foto non finisca sotto la navbar */
 @media (min-width: 768px) {
   .photo-blob {
