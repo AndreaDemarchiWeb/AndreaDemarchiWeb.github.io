@@ -1,104 +1,94 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacts</title>
-    <!--Stylesheets-->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/contacts.css" />
 
-    <!-- Favicon  -->
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="/assets/img/logo-only-letters-w.png"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts</title>
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/contacts.css" />
 
-    <!--Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon  -->
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo-only-letters-w.png" />
 
-    <!-- Google icons  -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 
-    <!--Iconscout icons-->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
-    />
-  </head>
+  <!-- Google icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <body>
-    <!-- Header con Navbar-->
+  <!--Iconscout icons-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+</head>
 
-    <header class="header">
-      <div class="header__content">
-        <a class="header__logo" href="/">
-          <img
-            src="/assets/img/logo-only-letters-w.png"
-            alt="Andrea Demarchi Logo"
-            class="img-res logo"
-          />
-        </a>
-        <ul class="header__menu menu-closed">
-          <li><a href="/">Home</a></li>
-          <li><a href="/#about-me">About</a></li>
-          <li><a href="/#elenco-lavori">Projects</a></li>
-          <li><a href="/contacts/">Contacts</a></li>
-        </ul>
-        <div class="header__quick">
-          <a href="#"></a>
-          <div class="icon-hamburger">
-            <span></span>
-            <span></span>
-          </div>
+<body>
+  <!-- Header con Navbar-->
+
+  <header class="header">
+    <div class="header__content">
+      <a class="header__logo" href="/">
+        <img src="/assets/img/logo-only-letters-w.png" alt="Andrea Demarchi Logo" class="img-res logo" />
+      </a>
+      <ul class="header__menu menu-closed">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about-me">About</a></li>
+        <li><a href="/#elenco-lavori">Projects</a></li>
+        <li><a href="/contacts/">Contacts</a></li>
+      </ul>
+      <div class="header__quick">
+        <a href="#"></a>
+        <div class="icon-hamburger">
+          <span></span>
+          <span></span>
         </div>
       </div>
-    </header>
-
-    <div class="container-form">
-      <h1 class="text-4">Your submission has been received.</h1>
-      <h1 class="text-4">Thank you for getting in touch!</h1>
     </div>
+  </header>
 
-    <!-- Footer Navbar -->
-    <div class="nav-container mt-4 position-navbar-contacts">
-      <nav class="nav horizontal">
-        <ul>
-          <li>
-            <a href="/">
-              <i class="material-icons">home</i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="material-icons">person</i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/AndreaDemarchiWeb">
-              <i class="uil uil-github-alt"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <div class="container-form">
+    <h1 class="text-4">Your submission has been received.</h1>
+    <h1 class="text-4">Thank you for getting in touch!</h1>
+  </div>
 
-    <script>
-      let item = document.querySelector(".icon-hamburger");
-      item.addEventListener("click", function () {
-        document.body.classList.toggle("menu-open");
-      });
-    </script>
-  </body>
+  <!-- Footer Navbar -->
+  <div class="nav-container mt-4 position-navbar-contacts">
+    <nav class="nav horizontal">
+      <ul>
+        <li>
+          <a href="/">
+            <i class="material-icons">home</i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons">person</i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/AndreaDemarchiWeb">
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script>
+    let item = document.querySelector(".icon-hamburger");
+    item.addEventListener("click", function () {
+      document.body.classList.toggle("menu-open");
+    });
+    if (screen.width < 768) {
+      script.setAttribute("async", "true");
+    } else {
+      script.setAttribute("defer", "true");
+    }
+  </script>
+</body>
+
 </html>

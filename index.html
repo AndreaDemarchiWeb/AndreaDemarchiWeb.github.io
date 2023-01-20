@@ -45,7 +45,7 @@
   <header class="header">
     <div class="header__content">
       <a class="header__logo" href="/">
-        <img src="/assets/img/logo-only-letters-w.png" alt="Andrea Demarchi Logo" class="img-res logo" />
+        <img src="/assets/img/logo-only-letters-w.png" alt="Andrea Demarchi Logo" loading="lazy" class="img-res logo" />
       </a>
       <ul class="header__menu menu-closed">
         <li><a href="/">Home</a></li>
@@ -77,7 +77,7 @@
           d="M30,-35.3C45.1,-30.4,67.6,-29.9,72.9,-21.8C78.2,-13.7,66.2,2,58.1,16.5C50.1,31,46,44.3,37,53.7C27.9,63.1,14,68.5,-0.9,69.7C-15.8,70.9,-31.5,68,-37.7,57.7C-43.8,47.4,-40.4,29.7,-47.3,14C-54.2,-1.6,-71.4,-15.2,-73.9,-29.1C-76.5,-43.1,-64.2,-57.3,-49.5,-62.3C-34.7,-67.3,-17.3,-62.9,-4.9,-56.1C7.5,-49.4,15,-40.1,30,-35.3Z"
           transform="translate(100 100)" />
       </svg>
-      <img src="/assets/img/foto-profilo.jpg" alt="Andrea Demarchi" class="img-res img-round p-4" />
+      <img src="/assets/img/foto-profilo.jpg" alt="Andrea Demarchi" loading="lazy" class="img-res img-round p-4" />
     </div>
   </div>
 
@@ -209,11 +209,17 @@
 
   <div class="spacer-2"></div>
 
+
   <script>
     let item = document.querySelector(".icon-hamburger");
     item.addEventListener("click", function () {
       document.body.classList.toggle("menu-open");
     });
+    if (screen.width < 768) {
+      script.setAttribute("async", "true");
+    } else {
+      script.setAttribute("defer", "true");
+    }
   </script>
 </body>
 

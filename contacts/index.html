@@ -106,7 +106,13 @@
     item.addEventListener("click", function () {
       document.body.classList.toggle("menu-open");
     });
+    if (screen.width < 768) {
+      script.setAttribute("async", "true");
+    } else {
+      script.setAttribute("defer", "true");
+    }
   </script>
+
 </body>
 
 </html>
